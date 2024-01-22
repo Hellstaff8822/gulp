@@ -9,12 +9,15 @@
 @import 'layout/base';
 @import 'layout/scroll';
 @import 'layout/grid';
+@import 'components/accordion';
 
 // components
 @import 'components/header';
 @import 'components/hero';
 @import 'components/statistics';
 @import 'components/lector';
+@import 'components/faq';
+@import 'components/started';
 
 @import 'components/footer';
 
