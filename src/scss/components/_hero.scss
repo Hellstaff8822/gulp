@@ -1,21 +1,22 @@
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 0px 20px 20px 0px;
-  margin-bottom: 100px;
   max-width: 1090px;
-  height: 700px;
-  margin-top: 30px;
   background: linear-gradient(
     44deg,
     rgba(205, 16, 255, 0.05) 15.75%,
     rgba(159, 6, 255, 0.05) 84.63%
   );
-  position: relative;
-  .container {
-  }
-  &__container {
+  border-radius: 0px 20px 20px 0px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 134px;
+    margin-bottom: 94px;
+    position: relative;
   }
 
   &__info {
@@ -53,42 +54,42 @@
 
   &__image {
     display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 170px;
-    left: 90%;
+    border-radius: 20px 20px 20px 20px;
+    background: #001a49;
+    box-shadow: 0px 32px 44px 0px #818a8c;
     width: 590px;
     height: 360px;
     flex-shrink: 0;
-
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 90%;
+    top: 7%;
     img {
-      flex-shrink: 0;
       cursor: pointer;
-      border-radius: 20px 0px 0px 20px;
-      box-shadow: 0px 32px 44px 0px #818a8c;
     }
   }
 }
 
 .hero-student {
   display: flex;
+  align-items: center;
   gap: 70px;
-  position: relative;
 
   &__img {
     display: flex;
     align-items: center;
     position: relative;
   }
-  &__one {
-  }
+
   &__two {
     position: absolute;
+    top: 1px;
     left: 27px;
   }
   &__three {
     position: absolute;
+    top: 1px;
     left: 60px;
     z-index: 1;
   }
