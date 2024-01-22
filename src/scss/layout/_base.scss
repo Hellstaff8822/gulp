@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: var(--ff);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.container {
+  max-width: 1126px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+.main {
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 33px;
+  background: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+}

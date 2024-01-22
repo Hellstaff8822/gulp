@@ -1,0 +1,101 @@
+.hero {
+  display: flex;
+  border-radius: 0px 20px 20px 0px;
+  max-width: 1090px;
+  margin-bottom: 100px;
+  background: linear-gradient(
+    44deg,
+    rgba(205, 16, 255, 0.05) 15.75%,
+    rgba(159, 6, 255, 0.05) 84.63%
+  );
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    max-width: 697px;
+    display: flex;
+    padding-top: 134px;
+    padding-left: 160px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    color: var(--c-primary);
+    font: var(--title);
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    color: var(--c-desc);
+    font: var(--desc);
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    padding: 21px 49px;
+    color: var(--c-text-white);
+    font-family: var(--ff-secondary);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 100px;
+  }
+
+  &__image {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 60%;
+    top: 28%;
+    width: 590px;
+    height: 360px;
+
+    img {
+      flex-shrink: 0;
+      cursor: pointer;
+      border-radius: 20px 0px 0px 20px;
+      box-shadow: 0px 32px 44px 0px #818a8c;
+    }
+  }
+}
+
+.hero-student {
+  display: flex;
+  margin-bottom: 94px;
+  gap: 70px;
+  position: relative;
+
+  &__img {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__one {
+  }
+  &__two {
+    position: absolute;
+    left: 27px;
+  }
+  &__three {
+    position: absolute;
+    left: 60px;
+    z-index: 1;
+  }
+
+  &__text {
+    color: var(--c-desc);
+    font-size: 16px;
+    font-weight: 400;
+    span {
+      color: #9f07ff;
+    }
+  }
+}
