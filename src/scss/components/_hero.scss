@@ -1,24 +1,21 @@
 .hero {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 0px 20px 20px 0px;
-  max-width: 1090px;
   margin-bottom: 100px;
+  max-width: 1090px;
+  height: 700px;
+  margin-top: 30px;
   background: linear-gradient(
     44deg,
     rgba(205, 16, 255, 0.05) 15.75%,
     rgba(159, 6, 255, 0.05) 84.63%
   );
-
+  position: relative;
   .container {
-    display: flex;
-    justify-content: space-between;
   }
-
   &__container {
-    max-width: 697px;
-    display: flex;
-    padding-top: 134px;
-    padding-left: 160px;
   }
 
   &__info {
@@ -29,14 +26,20 @@
 
   &__title {
     color: var(--c-primary);
-    font: var(--title);
+    font-family: var(--ff-second);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: -1px;
     margin-bottom: 20px;
+    width: 537px;
   }
 
   &__desc {
     color: var(--c-desc);
     font: var(--desc);
     margin-bottom: 40px;
+    width: 560px;
   }
 
   &__button {
@@ -53,10 +56,11 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    left: 60%;
-    top: 28%;
+    top: 170px;
+    left: 90%;
     width: 590px;
     height: 360px;
+    flex-shrink: 0;
 
     img {
       flex-shrink: 0;
@@ -69,7 +73,6 @@
 
 .hero-student {
   display: flex;
-  margin-bottom: 94px;
   gap: 70px;
   position: relative;
 
