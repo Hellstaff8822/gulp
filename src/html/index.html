@@ -35,6 +35,14 @@
         document.getElementById('headerBackdrop').classList.toggle('_active');
       }
     </script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.reviews-card__items', {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        });
+      });
+    </script>
   </body>
 </html>
