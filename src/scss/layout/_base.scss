@@ -6,14 +6,12 @@ body {
   font-family: var(--ff);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  
 }
 .container {
   max-width: 1120px;
   width: 100%;
   margin-inline: auto;
   padding: 0 20px;
-  
 }
 .main {
   padding: 20px;
@@ -22,6 +20,10 @@ body {
 .btn {
   border-radius: 33px;
   background: linear-gradient(44deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    opacity: 0.6;
+  }
 }
 h2 {
   margin: 0;
@@ -35,11 +37,8 @@ h6 {
   overflow: hidden;
 }
 
-
-.swiper-wrapper{
- 
+.swiper-wrapper {
   .swiper-slide {
     width: 550px;
   }
 }
-
