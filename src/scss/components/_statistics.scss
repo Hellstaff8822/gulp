@@ -10,6 +10,9 @@
   border: 1px solid #e7eaeb;
   background: var(--c-text-white);
   position: relative;
+  @include tablet{
+    grid-template-columns: 1fr;
+   }
   &::before,
   &::after {
     content: '';
@@ -17,6 +20,9 @@
     position: absolute;
     border-radius: 50%;
     z-index: -1;
+    @include tablet{
+     display: none;
+    }
   }
   &::before {
     left: -206px;

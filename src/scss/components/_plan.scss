@@ -14,17 +14,24 @@
     border-radius: 50%;
     top: 28px;
     right: -245px;
+    @include tablet {
+      display: none;
+    }
   }
-&__info{
+  &__info {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    
+  }
   &__title {
     text-align: center;
     color: var(--c-primary);
     font: var(--title);
     margin-bottom: 20px;
+    @include tablet {
+      font-size: 36px;
+    }
   }
 
   &__desc {
@@ -34,9 +41,18 @@
     width: 560px;
     line-height: 30px;
     margin-bottom: 60px;
+    @include tablet {
+      font-size: 16px;
+      width: 460px;
+    }
   }
 }
 .plan-list {
+  @include tablet {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
   &__card {
     display: flex;
     justify-content: space-between;
@@ -49,6 +65,14 @@
     );
     padding: 50px;
     margin-bottom: 30px;
+    @include tablet {
+      text-align: center;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      padding: 30px 70px 30px 70px;
+    }
   }
 
   &__title {
@@ -61,7 +85,7 @@
 
   &__desc {
     color: var(--c-desc);
-    font: var( --d-accordion);
+    font: var(--d-accordion);
     width: 501px;
   }
 
@@ -69,6 +93,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    @include tablet {
+      flex-direction: column;
+    }
   }
   &__img {
     display: flex;

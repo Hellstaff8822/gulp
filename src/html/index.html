@@ -38,11 +38,22 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        var mySwiper = new Swiper('.reviews-card__items', {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        });
-      });
+  var mySwiper = new Swiper('.reviews-card__items', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    breakpoints: {
+      550: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+    },
+  });
+});
     </script>
   </body>
 </html>

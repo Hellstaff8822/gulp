@@ -10,6 +10,9 @@
     position: absolute;
     display: block;
     border-radius: 50%;
+    @include tablet{
+      display: none;
+    }
   }
   &::before {
     width: 123px;
@@ -29,6 +32,7 @@
     border-radius: 50%;
     background: linear-gradient(44deg, #CD10FF 15.75%, #9F06FF 84.63%);
     z-index: -1;
+   
   }
 
   &__offer {
@@ -48,6 +52,11 @@
       rgba(255, 174, 112, 0.2) 0 100%
     );
     margin-bottom: 50px;
+    @include tablet{
+      font-size: 11px;
+      
+
+    }
   }
 
   &__info {
@@ -62,6 +71,10 @@
     text-align: center;
     width: 650px;
     margin-bottom: 30px;
+    @include tablet{
+      font-size: 36px;
+      width: 550px;
+    }
   }
 
   &__button {
@@ -70,5 +83,10 @@
     font-size: 20px;
     font-weight: 700;
     padding: 20px 49px;
+    @include tablet{
+      font-size: 18px;
+      padding: 18px 40px;
+
+    }
   }
 }
